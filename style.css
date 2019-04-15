@@ -1,0 +1,30 @@
+body {
+  background: #3D3D3D;
+  color: #F5F5F5;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Sniglet', cursive;
+}
+
+a {
+  color: pink;
+}
+
+li {
+  list-style: square;
+}
+
+.subject{
+  text-transform: lowercase;
+  font-size: 30px;
+}
+
+p {
+  font-size: 16px;
+  text-transform: none;
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+}

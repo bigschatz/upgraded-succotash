@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Schatzi's Web Development Journal)</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sniglet" rel="stylesheet">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1 class="subject">My Web Developer Journal</h1>
+    <nav>
+      <a href="./aboutme.html">About Me</a>
+      <a href="./tutorials.html">Tutorials</a>
+      <a href="#media">Media</a>
+      <a href="#learning">Learning</a>
+    </nav>
+
+    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Badge_js-strict.svg/739px-Badge_js-strict.svg.png"
+    width="120" height="160" alt="a javascript logo">
+  </img> -->
+
+    <div id="introduction" class="subject">
+      <h2 class="subject">Who Am I?</h2>
+      <p>My name is Steve Schatz and I am a newbie web developer.<br>
+        Right now I am enrolled in <a href="https://www.codecademy.com/" target="_blank">Codecademy's HTML
+          Track</a>.<br>
+        It's website that contains a great number of courses for beginners,
+        intermediate users, and advanced programmers who want to learn new skills.
+      </p>
+      <p>Here is a brief video showcasing what they offer:</p>
+      <br>
+    </div>
+
+
+    <div id="media">
+      <iframe width="424" height="238" src="https://www.youtube.com/embed/InA5Ff7mxrc" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+    <div id="learning">
+      <h2 class="subject">Table Practice</h2>
+      <p> Tables... Hmm. Not my favorite HTML element because it is very hard to
+        visualize. I will attempt to create one for the hours that I've worked this
+        week.</p><br>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Days of the Week</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday</th>
+            <th scope="col">Thursday</th>
+            <th scope="col">Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Feb 4 - Feb 8</th>
+            <td>9.25</td>
+            <td>9.50</td>
+            <td>9.25</td>
+            <td>9.00</td>
+            <td>8.50</td>
+          </tr>
+          <tr>
+            <th scope="row">Feb 11 - Feb 15</th>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Total</th>
+            <td colspan="5">45.50</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <p>Now, this is a very plain looking table but it uses the HTML elements:
+        table, thead, tr, th, tbody, tfoot, and colspan! <br> Here are the things I
+        want to learn right now: (btw, this is an unordered or ul list!)</p>
+
+      <ul>
+        <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a></li>
+        <li><a href="https://www.w3schools.com/Css/" target="_blank">CSS</a></li>
+        <li><a href="https://www.w3schools.com/nodejs/nodejs_intro.asp" target="_blank">node.js</a></li>
+        <li><a href="https://reactjs.org/" target="blank">React</a></li>
+      </ul>
+
+    </div>
+
+    <div id="forms">
+      <h2 class="subject">Forms practice</h2>
+      <p> I will practice some forms here. They will be as follows: </p>
+
+      <ul>
+        <li>checkboxes</li>
+        <li>radio buttons</li>
+        <li>ranges</li>
+        <li>select lists (pull-down menu)</li>
+        <li>data lists</li>
+        <li>text areas (with placeholder)</li>
+      </ul>
+      <br />
+
+      <div id="order pizza online">
+        <h2 class="subject">Order Pizza Online Here!</h2>
+        <a href="http://www.papajohns.com" target="_blank"><img
+            src="https://www.dominos.co.in/theme2/front/images/home/order-online.png" width="150" height="150"
+            alt="order pizza online logo" title="click to go to Papa John's"></a>
+      </div>
+
+
+      <form action="submission.html" method="POST">
+        <section class="order info">
+          <label for="name">Enter your username: </label>
+          <input type="text" id="name" name="name" placeholder="e.g. jimmybuffet99 (8-15 chr)" minlength="8"
+            maxlength="15" required pattern="[a-zA-z0-9]+" size="30">
+          <br />
+          <label for="password">Enter your password: </label>
+          <input type="text" id="password" name="password" minlength="3" maxlength="15" required pattern="[\S{8,15}]"
+            placeholder="pw must be 8-15 chr" size="30">
+          <br />
+          <label for="address">What is your address? </label>
+          <input type="text" id="address" name="address" placeholder="eg 123 Main St. My City, MA" size="50" required
+            pattern="[a-zA-z0-9\s]+">
+          <br />
+          <label for="amount">How many pizzas do you want? </label>
+          <input type="number" name="amount" id="amount" value="1" min="1" max="5" required>
+        </section>
+        <hr align="left" width="50%">
+
+        <section class="pizza size">
+          <span>What size crust would you like? </span>
+          <input type="radio" id="small crust" name="crust" value="small">
+          <label for="small crust">Small (10")</label>
+          <input type="radio" id="med crust" name="crust" value="medium" checked>
+          <label for="med crust">Medium (13")</label>
+          <input type="radio" id="lrg crust" name="crust" value="large">
+          <label for="lrg crust">Large (18")</label>
+        </section>
+
+        <section class="pizza crust">
+          <label for="crust">What kind of crust? </label>
+          <select name="crust" id="crust">
+            <option value="thin">Thin Crust</option>
+            <option value="classic">Classic Hand-Tossed</option>
+            <option value="deep dish">Chicago Style (deep dish)</option>
+          </select>
+        </section>
+
+        <section class="base">
+          <label for="base">Pick a base! </label>
+          <input list="bases" name="base" id="base">
+          <datalist id="bases">
+            <option value="marinara"></option>
+            <option value="pesto"></option>
+            <option value="bianco"></option>
+          </datalist>
+        </section>
+
+        <section class="toppings">
+          <span>What toppings would you like on your pizza? </span>
+          <input type="checkbox" name="topping" id="pepperoni" value="pepperoni">
+          <label for="pepperoni">Pepperoni</label>
+          <input type="checkbox" name="topping" id="onion" value="onions">
+          <label for="onion">Onion</label>
+          <input type="checkbox" name="topping" id="mushroom" value="mushrooms">
+          <label for="mushroom">Mushroom</label>
+          <input type="checkbox" name="topping" id="sausage" value="sausage">
+          <label for="sausage">Sausage</label>
+          <input type="checkbox" name="topping" id="jalapeno" value="jalapeno">
+          <label for="jalapeno">Jalapeno</label>
+        </section>
+        <hr align="left" width=50%>
+
+        <section class="cheese">
+          <label for="cheese">How much cheese do you want?</label>
+          <br>
+          <span>I'm watching my figure</span>
+          <input type="range" name="cheese" id="cheese" value="3" min="1" max="5" step="1">
+          <span>Bring It On!</span>
+        </section>
+        <hr align="left" width=50%>
+
+        <section class="extra-info">
+          <label for="extra">Anything other things to add? (max 50 chars)</label>
+          <br>
+          <textarea name="extra" id="extra" rows="5" cols="40" placeholder="add your comments here"
+            maxlength="100"></textarea>
+        </section>
+
+        <section class="submission">
+          <input type="submit" value="Submit">
+        </section>
+
+      </form>
+    </div>
+
+  </body>
+
+</html>
